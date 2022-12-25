@@ -1,0 +1,1237 @@
+info: 12/24/2022 15:53:49.681 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/24/2022 15:53:49.733 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 15:53:49.735 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 15:53:49.735 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 15:53:49.735 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 15:53:49.756 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 15:53:50.154 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 15:53:50.233 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/24/2022 15:53:50.235 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 12/24/2022 15:53:50.235 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 15:53:50.484 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 15:53:50.487 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ManagerProduct' AND TABLE_NAME='__EFMigrationsHistory';
+info: 12/24/2022 15:53:50.556 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (68ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ManagerProduct' AND TABLE_NAME='__EFMigrationsHistory';
+dbug: 12/24/2022 15:53:50.557 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 15:53:50.558 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 15:53:50.697 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/24/2022 15:53:50.697 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/24/2022 15:53:50.697 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 15:53:50.740 info: 12/24/2022 16:38:02.610 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/24/2022 16:38:02.632 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:02.637 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.017 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.093 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/24/2022 16:38:03.096 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (2ms).
+dbug: 12/24/2022 16:38:03.096 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.314 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.317 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ManagerProduct' AND TABLE_NAME='__EFMigrationsHistory';
+info: 12/24/2022 16:38:03.371 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (54ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ManagerProduct' AND TABLE_NAME='__EFMigrationsHistory';
+dbug: 12/24/2022 16:38:03.372 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.373 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.374 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.587 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.631 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/24/2022 16:38:03.631 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 12/24/2022 16:38:03.631 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.675 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.675 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ManagerProduct' AND TABLE_NAME='__EFMigrationsHistory';
+info: 12/24/2022 16:38:03.720 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (44ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ManagerProduct' AND TABLE_NAME='__EFMigrationsHistory';
+dbug: 12/24/2022 16:38:03.720 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.720 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.738 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/24/2022 16:38:03.738 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/24/2022 16:38:03.738 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.780 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.780 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+info: 12/24/2022 16:38:03.826 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+dbug: 12/24/2022 16:38:03.831 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader was disposed.
+dbug: 12/24/2022 16:38:03.831 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.831 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+info: 12/24/2022 16:38:03.844 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20221224093740_Init_db'.
+dbug: 12/24/2022 16:38:03.889 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.933 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ManagerProduct' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:38:03.935 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 12/24/2022 16:38:04.033 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'Unspecified'.
+dbug: 12/24/2022 16:38:04.034 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 16:38:04.034 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 16:38:04.035 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER DATABASE CHARACTER SET utf8mb4;
+info: 12/24/2022 16:38:04.103 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (68ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER DATABASE CHARACTER SET utf8mb4;
+dbug: 12/24/2022 16:38:04.103 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 16:38:04.103 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 16:38:04.103 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `Category` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Name` longtext CHARACTER SET utf8mb4 NULL,
+          `CreationTime` datetime(6) NOT NULL,
+          `DeletetionTime` datetime(6) NULL,
+          `LastModificationTime` datetime(6) NULL,
+          CONSTRAINT `PK_Category` PRIMARY KEY (`Id`)
+      ) CHARACTER SET=utf8mb4;
+info: 12/24/2022 16:38:04.227 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (124ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `Category` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Name` longtext CHARACTER SET utf8mb4 NULL,
+          `CreationTime` datetime(6) NOT NULL,
+          `DeletetionTime` datetime(6) NULL,
+          `LastModificationTime` datetime(6) NULL,
+          CONSTRAINT `PK_Category` PRIMARY KEY (`Id`)
+      ) CHARACTER SET=utf8mb4;
+dbug: 12/24/2022 16:38:04.227 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 16:38:04.227 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 16:38:04.227 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `State` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Name` longtext CHARACTER SET utf8mb4 NULL,
+          `CreationTime` datetime(6) NOT NULL,
+          `DeletetionTime` datetime(6) NULL,
+          `LastModificationTime` datetime(6) NULL,
+          CONSTRAINT `PK_State` PRIMARY KEY (`Id`)
+      ) CHARACTER SET=utf8mb4;
+info: 12/24/2022 16:38:04.304 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (77ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `State` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Name` longtext CHARACTER SET utf8mb4 NULL,
+          `CreationTime` datetime(6) NOT NULL,
+          `DeletetionTime` datetime(6) NULL,
+          `LastModificationTime` datetime(6) NULL,
+          CONSTRAINT `PK_State` PRIMARY KEY (`Id`)
+      ) CHARACTER SET=utf8mb4;
+dbug: 12/24/2022 16:38:04.304 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 16:38:04.304 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 16:38:04.304 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `Job` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Name` longtext CHARACTER SET utf8mb4 NULL,
+          `FromDate` datetime(6) NOT NULL,
+          `ToDate` datetime(6) NOT NULL,
+          `CategoryId` int NOT NULL,
+          `StateId` int NOT NULL,
+          `CreationTime` datetime(6) NOT NULL,
+          `DeletetionTime` datetime(6) NULL,
+          `LastModificationTime` datetime(6) NULL,
+          CONSTRAINT `PK_Job` PRIMARY KEY (`Id`),
+          CONSTRAINT `FK_Job_Category_CategoryId` FOREIGN KEY (`CategoryId`) REFERENCES `Category` (`Id`) ON DELETE CASCADE,
+          CONSTRAINT `FK_Job_State_StateId` FOREIGN KEY (`StateId`) REFERENCES `State` (`Id`) ON DELETE CASCADE
+      ) CHARACTER SET=utf8mb4;
+info: 12/24/2022 16:38:04.414 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (110ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `Job` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Name` longtext CHARACTER SET utf8mb4 NULL,
+          `FromDate` datetime(6) NOT NULL,
+          `ToDate` datetime(6) NOT NULL,
+          `CategoryId` int NOT NULL,
+          `StateId` int NOT NULL,
+          `CreationTime` datetime(6) NOT NULL,
+          `DeletetionTime` datetime(6) NULL,
+          `LastModificationTime` datetime(6) NULL,
+          CONSTRAINT `PK_Job` PRIMARY KEY (`Id`),
+          CONSTRAINT `FK_Job_Category_CategoryId` FOREIGN KEY (`CategoryId`) REFERENCES `Category` (`Id`) ON DELETE CASCADE,
+          CONSTRAINT `FK_Job_State_StateId` FOREIGN KEY (`StateId`) REFERENCES `State` (`Id`) ON DELETE CASCADE
+      ) CHARACTER SET=utf8mb4;
+dbug: 12/24/2022 16:38:04.414 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 16:38:04.414 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 16:38:04.414 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX `IX_Job_CategoryId` ON `Job` (`CategoryId`);
+info: 12/24/2022 16:38:04.509 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (94ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX `IX_Job_CategoryId` ON `Job` (`CategoryId`);
+dbug: 12/24/2022 16:38:04.509 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 16:38:04.509 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 16:38:04.509 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX `IX_Job_StateId` ON `Job` (`StateId`);
+info: 12/24/2022 16:38:04.576 RelationalEventId.CommandExecinfo: 12/24/2022 16:39:51.014 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/24/2022 16:39:51.039 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:51.046 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:51.479 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:51.573 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:51.793 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:51.856 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:52.063 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:52.067 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 12/24/2022 16:39:52.154 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'Unspecified'.
+dbug: 12/24/2022 16:39:52.159 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 16:39:52.163 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (1ms).
+dbug: 12/24/2022 16:39:52.166 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE DATABASE `ToDoList`;
+info: 12/24/2022 16:39:52.220 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (53ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE DATABASE `ToDoList`;
+dbug: 12/24/2022 16:39:52.222 RelationalEventId.TransactionCommitting[20210] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Committing transaction.
+dbug: 12/24/2022 16:39:52.265 RelationalEventId.TransactionCommitted[20202] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Committed transaction.
+dbug: 12/24/2022 16:39:52.265 RelationalEventId.TransactionDisposed[20204] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Disposing transaction.
+dbug: 12/24/2022 16:39:52.266 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:52.267 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:52.274 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:52.506 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:52.613 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 16:39:52.614 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 16:39:52.628 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 16:39:52.628 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 16:39:52.628 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:52.857 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:52.857 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `__EFMigrationsHistory` (
+          `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+          `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+          CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+      ) CHARACTER SET=utf8mb4;
+info: 12/24/2022 16:39:52.969 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (111ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `__EFMigrationsHistory` (
+          `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+          `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+          CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+      ) CHARACTER SET=utf8mb4;
+dbug: 12/24/2022 16:39:52.969 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:52.970 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:52.973 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:53.201 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:53.247 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/24/2022 16:39:53.247 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 12/24/2022 16:39:53.247 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:53.291 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:53.292 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+info: 12/24/2022 16:39:53.338 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (47ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+dbug: 12/24/2022 16:39:53.339 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:53.339 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:53.340 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/24/2022 16:39:53.340 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/24/2022 16:39:53.340 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:53.382 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:53.383 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+info: 12/24/2022 16:39:53.427 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (44ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+dbug: 12/24/2022 16:39:53.428 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader was disposed.
+dbug: 12/24/2022 16:39:53.428 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:53.428 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+info: 12/24/2022 16:39:53.440 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20221224093740_Init_db'.
+dbug: 12/24/2022 16:39:53.461 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:53.503 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 16:39:53.503 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 12/24/2022 16:39:53.587 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'Unspecified'.
+dbug: 12/24/2022 16:39:53.587 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 16:39:53.587 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 16:39:53.587 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER DATABASE CHARACTER SET utf8mb4;
+info: 12/24/2022 16:39:53.632 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER DATABASE CHARACTER SET utf8mb4;
+dbug: 12/24/2022 16:39:53.632 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 16:39:53.632 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 16:39:53.632 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `Category` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Name` longtext CHARACTER SET utf8mb4 NULL,
+          `CreationTime` datetime(6) NOT NULL,
+          `DeletetionTime` datetime(6) NULL,
+          `LastModificationTime` datetime(6) NULL,
+          CONSTRAINT `PK_Category` PRIMARY KEY (`Id`)
+      ) CHARACTER SET=utf8mb4;
+info: 12/24/2022 16:39:53.698 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (66ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `Category` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Name` longtext CHARACTER SET utf8mb4 NULL,
+          `CreationTime` datetime(6) NOT NULL,
+          `DeletetionTime` datetime(6) NULL,
+          `LastModificationTime` datetime(6) NULL,
+          CONSTRAINT `PK_Category` PRIMARY KEY (`Id`)
+      ) CHARACTER SET=utf8mb4;
+dbug: 12/24/2022 16:39:53.698 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 16:39:53.698 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 16:39:53.698 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `State` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Name` longtext CHARACTER SET utf8mb4 NULL,
+          `CreationTime` datetime(6) NOT NULL,
+          `DeletetionTime` datetime(6) NULL,
+          `LastModificationTime` datetime(6) NULL,
+          CONSTRAINT `PK_State` PRIMARY KEY (`Id`)
+      ) CHARACTER SET=utf8mb4;
+info: 12/24/2022 16:39:53.767 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (69ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `State` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Name` longtext CHARACTER SET utf8mb4 NULL,
+          `CreationTime` datetime(6) NOT NULL,
+          `DeletetionTime` datetime(6) NULL,
+          `LastModificationTime` datetime(6) NULL,
+          CONSTRAINT `PK_State` PRIMARY KEY (`Id`)
+      ) CHARACTER SET=utf8mb4;
+dbug: 12/24/2022 16:39:53.767 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 16:39:53.767 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 16:39:53.767 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `Job` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Name` longtext CHARACTER SET utf8mb4 NULL,
+          `FromDate` datetime(6) NOT NULL,
+          `ToDate` datetime(6) NOT NULL,
+          `CategoryId` int NOT NULL,
+          `StateId` int NOT NULL,
+          `CreationTime` datetime(6) NOT NULL,
+          `DeletetionTime` datetime(6) NULL,
+          `LastModificationTime` datetime(6) NULL,
+          CONSTRAINT `PK_Job` PRIMARY KEY (`Id`),
+          CONSTRAINT `FK_Job_Category_CategoryId` FOREIGN KEY (`CategoryId`) REFERENCES `Category` (`Id`) ON DELETE CASCADE,
+          CONSTRAINT `FK_Job_State_StateId` FOREIGN KEY (`StateId`) REFERENCES `State` (`Id`) ON DELETE CASCADE
+      ) CHARACTER SET=utf8mb4;
+info: 12/24/2022 16:39:53.849 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (82ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE `Job` (
+          `Id` int NOT NULL AUTO_INCREMENT,
+          `Name` longtext CHARACTER SET utf8mb4 NULL,
+          `FromDate` datetime(6) NOT NULL,
+          `ToDate` datetime(6) NOT NULL,
+          `CategoryId` int NOT NULL,
+          `StateId` int NOT NULL,
+          `CreationTime` datetime(6) NOT NULL,
+          `DeletetionTime` datetime(6) NULL,
+          `LastModificationTime` datetime(6) NULL,
+          CONSTRAINT `PK_Job` PRIMARY KEY (`Id`),
+          CONSTRAINT `FK_Job_Category_CategoryId` FOREIGN KEY (`CategoryId`) REFERENCES `Category` (`Id`) ON DELETE CASCADE,
+          CONSTRAINT `FK_Job_State_StateId` FOREIGN KEY (`StateId`) REFERENCES `State` (`Id`) ON DELETE CASCADE
+      ) CHARACTER SET=utf8mb4;
+dbug: 12/24/2022 16:39:53.849 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 16:39:53.849 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 16:39:53.849 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX `IX_Job_CategoryId` ON `Job` (`CategoryId`);
+info: 12/24/2022 16:39:53.915 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (66ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX `IX_Job_CategoryId` ON `Job` (`CategoryId`);
+dbug: 12/24/2022 16:39:53.915 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 16:39:53.915 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 16:39:53.915 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE info: 12/24/2022 17:45:29.276 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/24/2022 17:45:29.366 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:45:29.368 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:45:29.368 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:45:29.368 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:45:29.373 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:45:29.373 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:45:29.373 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:45:29.373 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:45:29.427 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ToDoListDbContext' disposed.
+info: 12/24/2022 17:45:40.383 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/24/2022 17:45:40.407 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:40.413 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:40.771 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:40.849 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/24/2022 17:45:40.852 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (3ms).
+dbug: 12/24/2022 17:45:40.852 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.071 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.075 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+info: 12/24/2022 17:45:41.148 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (74ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+dbug: 12/24/2022 17:45:41.149 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.150 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.151 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.385 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.435 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/24/2022 17:45:41.435 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 12/24/2022 17:45:41.435 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.482 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.482 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+info: 12/24/2022 17:45:41.524 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (42ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+dbug: 12/24/2022 17:45:41.524 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.524 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.536 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/24/2022 17:45:41.536 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/24/2022 17:45:41.536 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.576 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.577 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+info: 12/24/2022 17:45:41.620 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+dbug: 12/24/2022 17:45:41.623 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader was disposed.
+dbug: 12/24/2022 17:45:41.623 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.623 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+info: 12/24/2022 17:45:41.637 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20221224104529_Edit_Table_Type'.
+dbug: 12/24/2022 17:45:41.666 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.716 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:41.717 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 12/24/2022 17:45:41.825 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'Unspecified'.
+dbug: 12/24/2022 17:45:41.826 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 17:45:41.826 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 17:45:41.826 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE `State` SET `Name` = ''
+      WHERE `Name` IS NULL;
+      SELECT ROW_COUNT();
+info: 12/24/2022 17:45:41.892 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (65ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE `State` SET `Name` = ''
+      WHERE `Name` IS NULL;
+      SELECT ROW_COUNT();
+dbug: 12/24/2022 17:45:41.892 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 17:45:41.892 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 17:45:41.892 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `State` MODIFY COLUMN `Name` varchar(200) CHARACTER SET utf8mb4 NOT NULL;
+info: 12/24/2022 17:45:42.003 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (111ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `State` MODIFY COLUMN `Name` varchar(200) CHARACTER SET utf8mb4 NOT NULL;
+dbug: 12/24/2022 17:45:42.003 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 17:45:42.003 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 17:45:42.003 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `State` MODIFY COLUMN `CreationTime` datetime(6) NOT NULL DEFAULT GetDate();
+fail: 12/24/2022 17:45:42.049 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `State` MODIFY COLUMN `CreationTime` datetime(6) NOT NULL DEFAULT GetDate();
+dbug: 12/24/2022 17:45:42.093 RelationalEventId.TransactionDisposed[20204] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Disposing transaction.
+dbug: 12/24/2022 17:45:42.093 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:42.093 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:45:42.094 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ToDoListDbContext' disposed.
+info: 12/24/2022 17:46:23.311 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/24/2022 17:46:23.407 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:46:23.409 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:46:23.410 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:46:23.410 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:46:23.427 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:46:23.824 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:46:23.911 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/24/2022 17:46:23.913 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 12/24/2022 17:46:23.913 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:46:24.154 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:46:24.158 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+info: 12/24/2022 17:46:24.252 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (95ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+dbug: 12/24/2022 17:46:24.253 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:46:24.255 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:46:24.263 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/24/2022 17:46:24.263 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/24/2022 17:46:24.263 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:46:24.331 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:46:24.332 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+info: 12/24/2022 17:46:24.376 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (44ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+dbug: 12/24/2022 17:46:24.380 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader was disposed.
+dbug: 12/24/2022 17:46:24.380 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:46:24.380 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:46:24.424 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ToDoListDbContext' disposed.
+info: 12/24/2022 17:46:59.564 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/24/2022 17:46:59.657 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:46:59.658 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:46:59.659 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:46:59.659 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:46:59.664 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:46:59.664 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:46:59.664 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:46:59.664 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:46:59.719 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ToDoListDbContext' disposed.
+info: 12/24/2022 17:47:12.317 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/24/2022 17:47:12.338 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:12.344 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:12.777 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:12.850 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/24/2022 17:47:12.853 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (2ms).
+dbug: 12/24/2022 17:47:12.853 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.081 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.084 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+info: 12/24/2022 17:47:13.142 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (57ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+dbug: 12/24/2022 17:47:13.143 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.144 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.145 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.355 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.395 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/24/2022 17:47:13.395 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 12/24/2022 17:47:13.395 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.438 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.438 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+info: 12/24/2022 17:47:13.481 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+dbug: 12/24/2022 17:47:13.481 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.482 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.496 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/24/2022 17:47:13.496 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/24/2022 17:47:13.496 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.537 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.538 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+info: 12/24/2022 17:47:13.581 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (44ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+dbug: 12/24/2022 17:47:13.586 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader was disposed.
+dbug: 12/24/2022 17:47:13.586 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.586 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+info: 12/24/2022 17:47:13.599 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20221224104659_Edit_Table_Type'.
+dbug: 12/24/2022 17:47:13.624 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.664 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.666 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 12/24/2022 17:47:13.753 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'Unspecified'.
+dbug: 12/24/2022 17:47:13.754 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 17:47:13.754 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 17:47:13.755 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE `State` SET `Name` = ''
+      WHERE `Name` IS NULL;
+      SELECT ROW_COUNT();
+info: 12/24/2022 17:47:13.798 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE `State` SET `Name` = ''
+      WHERE `Name` IS NULL;
+      SELECT ROW_COUNT();
+dbug: 12/24/2022 17:47:13.798 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 17:47:13.798 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 17:47:13.798 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `State` MODIFY COLUMN `Name` varchar(200) CHARACTER SET utf8mb4 NOT NULL;
+info: 12/24/2022 17:47:13.854 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (56ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `State` MODIFY COLUMN `Name` varchar(200) CHARACTER SET utf8mb4 NOT NULL;
+dbug: 12/24/2022 17:47:13.854 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 17:47:13.854 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 17:47:13.854 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `State` MODIFY COLUMN `CreationTime` datetime(6) NOT NULL DEFAULT CURDATE();
+fail: 12/24/2022 17:47:13.913 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (53ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `State` MODIFY COLUMN `CreationTime` datetime(6) NOT NULL DEFAULT CURDATE();
+dbug: 12/24/2022 17:47:13.961 RelationalEventId.TransactionDisposed[20204] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Disposing transaction.
+dbug: 12/24/2022 17:47:13.962 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.962 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:47:13.964 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ToDoListDbContext' disposed.
+info: 12/24/2022 17:48:03.576 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/24/2022 17:48:03.672 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:48:03.674 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:48:03.674 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:48:03.674 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:48:03.697 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:04.109 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:04.190 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/24/2022 17:48:04.193 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (1ms).
+dbug: 12/24/2022 17:48:04.193 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:04.413 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:04.417 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+info: 12/24/2022 17:48:04.477 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (61ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+dbug: 12/24/2022 17:48:04.478 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:04.479 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:04.486 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/24/2022 17:48:04.486 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/24/2022 17:48:04.486 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:04.529 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:04.529 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+info: 12/24/2022 17:48:04.571 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (41ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+dbug: 12/24/2022 17:48:04.574 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader was disposed.
+dbug: 12/24/2022 17:48:04.574 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:04.574 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:04.626 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ToDoListDbContext' disposed.
+info: 12/24/2022 17:48:18.382 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/24/2022 17:48:18.474 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:48:18.476 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:48:18.476 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:48:18.476 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:48:18.481 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:48:18.481 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:48:18.481 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:48:18.481 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 17:48:18.537 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ToDoListDbContext' disposed.
+info: 12/24/2022 17:48:27.754 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/24/2022 17:48:27.775 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:27.781 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:28.293 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:28.474 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/24/2022 17:48:28.477 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (2ms).
+dbug: 12/24/2022 17:48:28.477 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:28.694 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:28.698 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+info: 12/24/2022 17:48:28.753 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (56ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+dbug: 12/24/2022 17:48:28.754 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:28.756 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:28.756 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:28.976 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:29.024 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/24/2022 17:48:29.024 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 12/24/2022 17:48:29.024 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:29.067 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:29.067 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+info: 12/24/2022 17:48:29.108 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (42ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+dbug: 12/24/2022 17:48:29.108 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:29.109 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:29.120 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/24/2022 17:48:29.120 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/24/2022 17:48:29.120 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:29.161 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:29.161 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+info: 12/24/2022 17:48:29.203 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (41ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+dbug: 12/24/2022 17:48:29.205 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader was disposed.
+dbug: 12/24/2022 17:48:29.205 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:29.205 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+info: 12/24/2022 17:48:29.219 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20221224104818_Edit_Table_Type'.
+dbug: 12/24/2022 17:48:29.246 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:29.289 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:29.291 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 12/24/2022 17:48:29.377 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'Unspecified'.
+dbug: 12/24/2022 17:48:29.378 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 17:48:29.378 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 17:48:29.378 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE `State` SET `Name` = ''
+      WHERE `Name` IS NULL;
+      SELECT ROW_COUNT();
+info: 12/24/2022 17:48:29.422 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE `State` SET `Name` = ''
+      WHERE `Name` IS NULL;
+      SELECT ROW_COUNT();
+dbug: 12/24/2022 17:48:29.422 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 17:48:29.422 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 17:48:29.422 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `State` MODIFY COLUMN `Name` varchar(200) CHARACTER SET utf8mb4 NOT NULL;
+info: 12/24/2022 17:48:29.478 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (56ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `State` MODIFY COLUMN `Name` varchar(200) CHARACTER SET utf8mb4 NOT NULL;
+dbug: 12/24/2022 17:48:29.478 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 17:48:29.478 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 17:48:29.478 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE `Job` SET `Name` = ''
+      WHERE `Name` IS NULL;
+      SELECT ROW_COUNT();
+info: 12/24/2022 17:48:29.531 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (53ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE `Job` SET `Name` = ''
+      WHERE `Name` IS NULL;
+      SELECT ROW_COUNT();
+dbug: 12/24/2022 17:48:29.532 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 17:48:29.532 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 17:48:29.532 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `Job` MODIFY COLUMN `Name` varchar(200) CHARACTER SET utf8mb4 NOT NULL;
+info: 12/24/2022 17:48:29.637 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (105ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `Job` MODIFY COLUMN `Name` varchar(200) CHARACTER SET utf8mb4 NOT NULL;
+dbug: 12/24/2022 17:48:29.637 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 17:48:29.637 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 17:48:29.637 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `Category` MODIFY COLUMN `Name` varchar(200) CHARACTER SET utf8mb4 NULL;
+info: 12/24/2022 17:48:29.725 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (88ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `Category` MODIFY COLUMN `Name` varchar(200) CHARACTER SET utf8mb4 NULL;
+dbug: 12/24/2022 17:48:29.726 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 17:48:29.726 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 17:48:29.726 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+      VALUES ('20221224104818_Edit_Table_Type', '6.0.11');
+info: 12/24/2022 17:48:29.772 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (47ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+      VALUES ('20221224104818_Edit_Table_Type', '6.0.11');
+dbug: 12/24/2022 17:48:29.774 RelationalEventId.TransactionCommitting[20210] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Committing transaction.
+dbug: 12/24/2022 17:48:29.817 RelationalEventId.TransactionCommitted[20202] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Committed transaction.
+dbug: 12/24/2022 17:48:29.819 RelationalEventId.TransactionDisposed[20204] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Disposing transaction.
+dbug: 12/24/2022 17:48:29.819 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:29.819 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 17:48:29.821 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ToDoListDbContext' disposed.
+info: 12/24/2022 21:19:31.735 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/24/2022 21:19:31.859 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 21:19:31.861 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 21:19:31.862 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 21:19:31.862 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 21:19:31.868 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 21:19:31.868 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 21:19:31.868 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/24/2022 21:19:31.868 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/24/2022 21:19:31.928 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ToDoListDbContext' disposed.
+info: 12/24/2022 21:19:57.429 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/24/2022 21:19:57.464 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:57.473 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.021 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.154 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/24/2022 21:19:58.158 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (5ms).
+dbug: 12/24/2022 21:19:58.158 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.347 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.392 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+info: 12/24/2022 21:19:58.451 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (97ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+dbug: 12/24/2022 21:19:58.453 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.457 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.459 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.733 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.766 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: 12/24/2022 21:19:58.766 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: 12/24/2022 21:19:58.766 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.813 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.813 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+info: 12/24/2022 21:19:58.858 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (45ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='ToDoList' AND TABLE_NAME='__EFMigrationsHistory';
+dbug: 12/24/2022 21:19:58.858 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.858 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.887 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 12/24/2022 21:19:58.887 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 12/24/2022 21:19:58.887 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.923 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.924 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+info: 12/24/2022 21:19:58.959 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `MigrationId`, `ProductVersion`
+      FROM `__EFMigrationsHistory`
+      ORDER BY `MigrationId`;
+dbug: 12/24/2022 21:19:58.968 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader was disposed.
+dbug: 12/24/2022 21:19:58.968 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:58.969 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+info: 12/24/2022 21:19:59.057 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20221224141931_EditLan2_Table_Type'.
+dbug: 12/24/2022 21:19:59.148 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:59.199 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opened connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:59.201 RelationalEventId.TransactionStarting[20209] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: 12/24/2022 21:19:59.280 RelationalEventId.TransactionStarted[20200] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Began transaction with isolation level 'Unspecified'.
+dbug: 12/24/2022 21:19:59.282 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 21:19:59.282 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 21:19:59.283 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `State` ADD `IsDeleted` tinyint(1) NOT NULL DEFAULT FALSE;
+info: 12/24/2022 21:19:59.446 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (163ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `State` ADD `IsDeleted` tinyint(1) NOT NULL DEFAULT FALSE;
+dbug: 12/24/2022 21:19:59.446 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 21:19:59.446 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 21:19:59.446 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `Job` ADD `IsDeleted` tinyint(1) NOT NULL DEFAULT FALSE;
+info: 12/24/2022 21:19:59.515 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (69ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `Job` ADD `IsDeleted` tinyint(1) NOT NULL DEFAULT FALSE;
+dbug: 12/24/2022 21:19:59.515 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 21:19:59.515 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 21:19:59.515 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `Category` ADD `IsDeleted` tinyint(1) NOT NULL DEFAULT FALSE;
+info: 12/24/2022 21:19:59.567 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (51ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE `Category` ADD `IsDeleted` tinyint(1) NOT NULL DEFAULT FALSE;
+dbug: 12/24/2022 21:19:59.567 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteNonQuery'.
+dbug: 12/24/2022 21:19:59.567 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteNonQuery' (0ms).
+dbug: 12/24/2022 21:19:59.567 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+      VALUES ('20221224141931_EditLan2_Table_Type', '6.0.11');
+info: 12/24/2022 21:19:59.614 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (47ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+      VALUES ('20221224141931_EditLan2_Table_Type', '6.0.11');
+dbug: 12/24/2022 21:19:59.616 RelationalEventId.TransactionCommitting[20210] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Committing transaction.
+dbug: 12/24/2022 21:19:59.668 RelationalEventId.TransactionCommitted[20202] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Committed transaction.
+dbug: 12/24/2022 21:19:59.670 RelationalEventId.TransactionDisposed[20204] (Microsoft.EntityFrameworkCore.Database.Transaction) 
+      Disposing transaction.
+dbug: 12/24/2022 21:19:59.670 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closing connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:59.670 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Closed connection to database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/24/2022 21:19:59.672 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ToDoListDbContext' disposed.
+info: 12/25/2022 09:04:49.743 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/25/2022 09:04:49.844 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/25/2022 09:04:49.845 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/25/2022 09:04:49.846 CoreEventId.DetectChangesStarting[10800] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges starting for 'ToDoListDbContext'.
+dbug: 12/25/2022 09:04:49.846 CoreEventId.DetectChangesCompleted[10801] (Microsoft.EntityFrameworkCore.ChangeTracking) 
+      DetectChanges completed for 'ToDoListDbContext'.
+dbug: 12/25/2022 09:04:49.891 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ToDoListDbContext' disposed.
+info: 12/25/2022 09:05:01.500 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.11 initialized 'ToDoListDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.21-mysql 
+dbug: 12/25/2022 09:05:01.526 RelationalEventId.MigrateUsingConnection[20400] (Microsoft.EntityFrameworkCore.Migrations) 
+      Migrating using database 'ToDoList' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/25/2022 09:05:01.532 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      Opening connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+fail: 12/25/2022 09:05:16.582 RelationalEventId.ConnectionError[20004] (Microsoft.EntityFrameworkCore.Database.Connection) 
+      An error occurred using the connection to database '' on server 'database-2.c0nsjksxeqe3.ap-southeast-1.rds.amazonaws.com'.
+dbug: 12/25/2022 09:05:16.590 CoreEventId.ContextDisposed[10407] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      'ToDoListDbContext' disposed.
