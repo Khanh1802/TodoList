@@ -159,9 +159,9 @@ namespace WinFormsToDoList
             var resultCategory = listCategory.Where(x => x.IsDeleted != true).ToList();
             CbbCategory.DataSource = resultCategory;
             CbbCategory.DisplayMember = "Name";
-            var listState = await _stateService.GetAllAsync();
-            var resultState = listState.Where(x => x.IsDeleted != true).ToList();
-            CbbState.DataSource = resultState;
+            // var listState = await _stateService.GetAllAsync();
+            //  var resultState = listState.Where(x => x.IsDeleted != true).ToList();
+            //   CbbState.DataSource = resultState;
             CbbState.DisplayMember = "Name";
             _loadingDone = true;
         }

@@ -1,4 +1,5 @@
 ﻿using ToDoList.Data.Models;
+using ToDoList.Dtos.States;
 using ToDoList.Services;
 
 namespace WinFormsToDoList
@@ -7,7 +8,8 @@ namespace WinFormsToDoList
     {
         private readonly IStateService _stateService;
         private bool _loadingDone = false;
-        private State _state;
+        //private State _state;
+        private StateDto _stateDto;
         public FormState(IStateService stateService)
         {
             InitializeComponent();
@@ -20,9 +22,10 @@ namespace WinFormsToDoList
             {
                 if (!string.IsNullOrEmpty(TbName.Text))
                 {
-                    _state = new State();
-                    _state.Name = TbName.Text;
-                    await _stateService.AddAsync(_state);
+                    var state = new CreateStateDto();
+                    state.Name = TbName.Text;
+
+                    await _stateService.AddAsync(state);
                     MessageBox.Show("Create new state completed", "Done", MessageBoxButtons.OK);
                     await RefreshDataGridView();
                 }
@@ -37,13 +40,18 @@ namespace WinFormsToDoList
         {
             if (_loadingDone)
             {
-                if (_state is not null)
+                if (_stateDto is not null)
                 {
                     if (!string.IsNullOrEmpty(TbName.Text))
                     {
-                        _state.Name = TbName.Text;
-                        _state.LastModificationTime = DateTime.Now;
-                        await _stateService.UpdateAsync(_state);
+                        var state = new UpdateStateDto { 
+                            Id = _stateDto.Id,
+                            Name = TbName.Text
+                        };
+
+                        //state.Name = TbName.Text;
+                        await _stateService.UpdateAsync(state);
+                        //await _stateService.UpdateAsync(_)
                         await RefreshDataGridView();
                         MessageBox.Show("Change state completed", "Done", MessageBoxButtons.OK);
                     }
@@ -59,13 +67,13 @@ namespace WinFormsToDoList
         {
             if (_loadingDone)
             {
-                if (_state is not null)
+                if (_stateDto is not null)
                 {
                     DialogResult dialogResult = MessageBox.Show("Are you sure want to delete this state", "Delete record", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
                         TbName.Text = string.Empty;
-                        await _stateService.RemoveAsync(_state);
+                        // await _stateService.RemoveAsync(_state);
                         await RefreshDataGridView();
                         MessageBox.Show("Record has been successfully deleted", "Done", MessageBoxButtons.OK);
                     }
@@ -82,17 +90,17 @@ namespace WinFormsToDoList
         private async Task RefreshDataGridView()
         {
             _loadingDone = false;
-            var listState = await _stateService.GetAllAsync();
-            var result = listState.Where(x => x.IsDeleted != true).ToList();
-            Dtg.DataSource = result;
+            //var listState = await _stateService.GetAllAsync();
+            //var result = listState.Where(x => x.IsDeleted != true).ToList();
+            Dtg.DataSource = await _stateService.GetAllAsync();
             // Ẩn colums
             Dtg.Columns["IsDeleted"].Visible = false;
-            Dtg.Columns["Jobs"].Visible = false;
+            //Dtg.Columns["Jobs"].Visible = false;
             TbName.Text = string.Empty;
             BtRemove.Enabled = false;
             BtUpdate.Enabled = false;
             BtAdd.Enabled = true;
-            _state = null;
+            _stateDto = null;
             _loadingDone = true;
         }
 
@@ -105,7 +113,7 @@ namespace WinFormsToDoList
                 BtRemove.Enabled = false;
                 BtUpdate.Enabled = false;
                 BtAdd.Enabled = true;
-                _state = null;
+                _stateDto = null;
                 return;
             }
             else
@@ -114,8 +122,8 @@ namespace WinFormsToDoList
                 var row = Dtg.Rows[e.RowIndex];
                 // row.Cells[0].Value.ToString() lấy id rồi convert
                 int id = Convert.ToInt32(row.Cells[0].Value.ToString());
-                _state = await _stateService.GetByIdAsync(id);
-                TbName.Text = _state.Name;
+                _stateDto = await _stateService.GetByIdAsync(id);
+                TbName.Text = _stateDto.Name;
                 BtAdd.Enabled = false;
                 BtRemove.Enabled = true;
                 BtUpdate.Enabled = true;

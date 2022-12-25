@@ -32,11 +32,11 @@ namespace ToDoList.Services
                 throw new Exception($"Category not found {item.CategoryId}");
             }
 
-            var state = await _stateRepository.GetByIdAsync(item.StateId);
-            if (state == null)
-            {
-                throw new Exception($"state not found {item.StateId}");
-            }
+            //var state = await _stateRepository.GetByIdAsync(item.StateId);
+            //if (state == null)
+            //{
+            //    throw new Exception($"state not found {item.StateId}");
+            //}
 
             var entity = _mapper.Map<CreateJobDto, Job>(item);
             await _jobRepository.AddAsync(entity);
@@ -84,12 +84,12 @@ namespace ToDoList.Services
                 throw new Exception($"Category not found {item.CategoryId}");
             }
 
-            var state = await _stateRepository.GetByIdAsync(item.StateId);
+            //var state = await _stateRepository.GetByIdAsync(item.StateId);
 
-            if (state == null)
-            {
-                throw new Exception($"State not found {item.StateId}");
-            }
+            //if (state == null)
+            //{
+            //    throw new Exception($"State not found {item.StateId}");
+            //}
 
             var entity = await _jobRepository.GetByIdAsync(item.Id);
             if (entity == null)

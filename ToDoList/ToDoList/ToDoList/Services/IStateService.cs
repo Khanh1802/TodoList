@@ -1,13 +1,10 @@
 ﻿using ToDoList.Data.Models;
+using ToDoList.Dtos.States;
 
 namespace ToDoList.Services
 {
-    public interface IStateService
+    public interface IStateService : IGenericService<StateDto, CreateStateDto, UpdateStateDto, FilterStateDto>
     {
-        Task<List<State>> GetAllAsync();
-        Task AddAsync(State state);
-        Task RemoveAsync(State state);
-        Task<State> GetByIdAsync(int id);
-        Task UpdateAsync(State state);
+        
     }
 }
