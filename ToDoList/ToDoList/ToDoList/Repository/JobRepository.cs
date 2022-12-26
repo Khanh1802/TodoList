@@ -83,6 +83,7 @@ namespace ToDoList.Repository
         {
             return _context.Jobs
                 .Where(x => !x.IsDeleted)
+                // nếu trong Job có thêm 2 class nữa thì dùng include
                 .Include(x => x.Category)
                 .Include(x => x.State)
                 .ToListAsync();

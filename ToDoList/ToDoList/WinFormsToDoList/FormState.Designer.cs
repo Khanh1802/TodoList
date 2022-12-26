@@ -37,6 +37,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.TbName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.TbFind = new System.Windows.Forms.TextBox();
+            this.BtFind = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Dtg)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -115,7 +118,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.TbName);
-            this.panel1.Location = new System.Drawing.Point(221, 107);
+            this.panel1.Location = new System.Drawing.Point(221, 120);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(545, 66);
             this.panel1.TabIndex = 37;
@@ -147,11 +150,41 @@
             this.label2.TabIndex = 42;
             this.label2.Text = "CREATE CATEGORY";
             // 
+            // TbFind
+            // 
+            this.TbFind.Location = new System.Drawing.Point(221, 74);
+            this.TbFind.Name = "TbFind";
+            this.TbFind.Size = new System.Drawing.Size(545, 27);
+            this.TbFind.TabIndex = 43;
+            // 
+            // BtFind
+            // 
+            this.BtFind.Location = new System.Drawing.Point(806, 74);
+            this.BtFind.Name = "BtFind";
+            this.BtFind.Size = new System.Drawing.Size(94, 27);
+            this.BtFind.TabIndex = 44;
+            this.BtFind.Text = "Find";
+            this.BtFind.UseVisualStyleBackColor = true;
+            this.BtFind.Click += new System.EventHandler(this.BtFind_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(116, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 28);
+            this.label3.TabIndex = 45;
+            this.label3.Text = "Search";
+            // 
             // FormState
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 578);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.BtFind);
+            this.Controls.Add(this.TbFind);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Dtg);
             this.Controls.Add(this.label1);
@@ -182,5 +215,8 @@
         private Label label4;
         private TextBox TbName;
         private Label label2;
+        private TextBox TbFind;
+        private Button BtFind;
+        private Label label3;
     }
 }

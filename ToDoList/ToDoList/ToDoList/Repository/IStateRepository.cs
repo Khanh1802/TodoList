@@ -2,12 +2,8 @@
 
 namespace ToDoList.Repository
 {
-    public interface IStateRepository
+    public interface IStateRepository : IGenericRepository<State>
     {
-        Task<List<State>> GetAllAsync();
-        Task AddAsync(State state);
-        Task RemoveAsync(State state);
-        Task<State> GetByIdAsync(int id);
-        Task UpdateAsync(State state);
+        
     }
 }

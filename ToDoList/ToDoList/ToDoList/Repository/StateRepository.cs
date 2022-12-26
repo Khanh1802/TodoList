@@ -13,31 +13,50 @@ namespace ToDoList.Repository
             _context = context;
         }
 
-        public async Task AddAsync(State state)
+        public async Task<State> AddAsync(State item)
         {
-            await _context.AddAsync(state);
+            await _context.States.AddAsync(item);
             await _context.SaveChangesAsync();
+            return item;
+        }
+
+        public async Task DeleteAsync(State item)
+        {
+            item.DeletetionTime = DateTime.Now;
+            item.IsDeleted = true;
+            await _context.SaveChangesAsync();
+
         }
 
         public async Task<List<State>> GetAllAsync()
         {
-            return await _context.States.ToListAsync();
+            return await _context.States
+                .Where(x => !x.IsDeleted)
+                .ToListAsync();
         }
 
-        public async Task<State> GetByIdAsync(int id)
+        public async Task<State> GetByIdAsync<TKey>(TKey key)
         {
-            return await _context.States.FindAsync(id);
+            return await _context.States.FindAsync(key);
+
         }
 
-        public async Task RemoveAsync(State state)
+        public Task<IQueryable<State>> GetQueryableAsync()
         {
-            state.IsDeleted = true;
-            await _context.SaveChangesAsync();
+            return Task.FromResult(_context.States.AsQueryable());
         }
 
-        public async Task UpdateAsync(State state)
-        {            
+        public Task SaveChangesAsync()
+        {
+            return _context.SaveChangesAsync();
+        }
+
+        public async Task<State> UpdateAsync(State item)
+        {
+            item.LastModificationTime = DateTime.Now;
+            _context.States.Update(item);
             await _context.SaveChangesAsync();
+            return item;
         }
     }
 }
