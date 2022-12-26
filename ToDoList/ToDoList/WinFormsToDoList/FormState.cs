@@ -44,7 +44,8 @@ namespace WinFormsToDoList
                 {
                     if (!string.IsNullOrEmpty(TbName.Text))
                     {
-                        var state = new UpdateStateDto { 
+                        var state = new UpdateStateDto
+                        {
                             Id = _stateDto.Id,
                             Name = TbName.Text
                         };
@@ -73,11 +74,10 @@ namespace WinFormsToDoList
                     if (dialogResult == DialogResult.Yes)
                     {
                         TbName.Text = string.Empty;
-                        // await _stateService.RemoveAsync(_state);
+                        await _stateService.DeleteAsync(_stateDto.Id);
                         await RefreshDataGridView();
                         MessageBox.Show("Record has been successfully deleted", "Done", MessageBoxButtons.OK);
                     }
-
                 }
             }
         }
@@ -127,6 +127,24 @@ namespace WinFormsToDoList
                 BtAdd.Enabled = false;
                 BtRemove.Enabled = true;
                 BtUpdate.Enabled = true;
+            }
+        }
+
+        private async void BtFind_Click(object sender, EventArgs e)
+        {
+            if (_loadingDone)
+            {
+                if (!string.IsNullOrEmpty(TbFind.Text))
+                {
+                    var state = new FilterStateDto();
+                    state.Name = TbFind.Text;
+                    var listStateDto = await _stateService.FilterAsync(state);
+                    Dtg.DataSource = listStateDto;
+                }
+                else
+                {
+                    await RefreshDataGridView();
+                }
             }
         }
     }

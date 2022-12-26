@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ToDoList.Dtos.States
+﻿namespace ToDoList.Dtos.States
 {
     public class FilterStateDto
     {
+        public string Name { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using ToDoList.Data.Models;
 using ToDoList.Dtos.States;
@@ -38,9 +39,13 @@ namespace ToDoList.Services
             await _stateRepository.DeleteAsync(findState);
         }
 
-        public Task<List<StateDto>> FilterAsync(FilterStateDto filter)
+        public async Task<List<StateDto>> FilterAsync(FilterStateDto filter)
         {
-            throw new NotImplementedException();
+            var filterState = await (await _stateRepository.GetQueryableAsync())
+                .Where(x => x.Name.Contains(filter.Name))
+                .ToListAsync();
+            //Map<TSource, TDestination>(TSource source);
+            return _mapper.Map<List<State>, List<StateDto>>(filterState);                
         }
 
         public async Task<List<StateDto>> GetAllAsync()

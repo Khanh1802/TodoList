@@ -37,7 +37,6 @@ namespace ToDoList.Services
             //{
             //    throw new Exception($"state not found {item.StateId}");
             //}
-
             var entity = _mapper.Map<CreateJobDto, Job>(item);
             await _jobRepository.AddAsync(entity);
             return _mapper.Map<Job, JobDto>(entity);
@@ -58,7 +57,7 @@ namespace ToDoList.Services
             var filterEntity = await (await _jobRepository.GetQueryableAsync())
                 .Where(x => x.CategoryId == filter.CategoryId && x.StateId == filter.StateId)
                 .ToListAsync();
-
+            // Map<TSource, TDestination>(TSource source);
             return _mapper.Map<List<Job>, List<JobDto>>(filterEntity);
         }
 
