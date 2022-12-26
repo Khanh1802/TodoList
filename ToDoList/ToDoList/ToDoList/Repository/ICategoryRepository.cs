@@ -2,13 +2,9 @@
 
 namespace ToDoList.Repository
 {
-    public interface ICategoryRepository
+    public interface ICategoryRepository : IGenericRepository<Category>
     {
-        Task<List<Category>> GetAllAsync();
-        Task AddAsync(Category category);
-        Task RemoveAsync(Category category);
-        Task<Category> GetByIdAsync(int id);
-        Task UpdateAsync(Category category);
+
 
     }
 }

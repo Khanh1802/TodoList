@@ -157,6 +157,7 @@
             this.BtFind.TabIndex = 47;
             this.BtFind.Text = "Find";
             this.BtFind.UseVisualStyleBackColor = true;
+            this.BtFind.Click += new System.EventHandler(this.BtFind_Click);
             // 
             // TbFind
             // 

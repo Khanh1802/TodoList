@@ -50,6 +50,7 @@ namespace WinFormsToDoList
 
                services.AddAutoMapper(typeof(JobProfile));
                services.AddAutoMapper(typeof(StateProfile));
+               services.AddAutoMapper(typeof(CategoryProfile));
            });
         }
     }

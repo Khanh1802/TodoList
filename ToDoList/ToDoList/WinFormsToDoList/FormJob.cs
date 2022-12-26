@@ -155,9 +155,9 @@ namespace WinFormsToDoList
             BtUpdate.Enabled = false;
             BtAdd.Enabled = true;
             _job = null;
-            var listCategory = await _categoryService.GetAllAsync();
-            var resultCategory = listCategory.Where(x => x.IsDeleted != true).ToList();
-            CbbCategory.DataSource = resultCategory;
+            //var listCategory = await _categoryService.GetAllAsync();
+            //var resultCategory = listCategory.Where(x => x.IsDeleted != true).ToList();
+            //CbbCategory.DataSource = resultCategory;
             CbbCategory.DisplayMember = "Name";
             // var listState = await _stateService.GetAllAsync();
             //  var resultState = listState.Where(x => x.IsDeleted != true).ToList();

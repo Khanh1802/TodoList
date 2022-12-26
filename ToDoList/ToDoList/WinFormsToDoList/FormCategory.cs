@@ -1,4 +1,6 @@
-﻿using ToDoList.Data.Models;
+﻿using AutoMapper;
+using ToDoList.Data.Models;
+using ToDoList.Dtos.CategoryDto;
 using ToDoList.Services;
 
 namespace WinFormsToDoList
@@ -6,13 +8,15 @@ namespace WinFormsToDoList
     public partial class FormCategory : Form
     {
         private readonly ICategoryService _categoryService;
+        private readonly IMapper _mapper;
         private bool _loadingDone = false;
-        private Category _category;
+        private CategoryDto _categoryDto;
 
-        public FormCategory(ICategoryService categoryService)
+        public FormCategory(ICategoryService categoryService, IMapper mapper)
         {
             InitializeComponent();
             _categoryService = categoryService;
+            _mapper = mapper;
         }
 
         private async void BtAdd_Click(object sender, EventArgs e)
@@ -21,10 +25,10 @@ namespace WinFormsToDoList
             {
                 if (!string.IsNullOrEmpty(TbName.Text))
                 {
-                    _category = new Category();
-                    _category.Name = TbName.Text;
-                    _category.CreationTime = DateTime.Now;
-                    await _categoryService.AddAsync(_category);
+                    var item = new CreateCategoryDto();
+                    item.Name = TbName.Text;
+                    //var entity = _mapper.Map<CategoryDto, CreateCategoryDto>(_categoryDto);
+                    await _categoryService.AddAsync(item);
                     MessageBox.Show("Create new category completed", "Done", MessageBoxButtons.OK);
                     await RefreshDataGridView();
                 }
@@ -43,7 +47,7 @@ namespace WinFormsToDoList
                 BtRemove.Enabled = false;
                 BtUpdate.Enabled = false;
                 BtAdd.Enabled = true;
-                _category = null;
+                _categoryDto = null;
                 return;
             }
             else
@@ -52,8 +56,8 @@ namespace WinFormsToDoList
                 var row = Dtg.Rows[e.RowIndex];
                 // row.Cells[0].Value.ToString() lấy id rồi convert
                 int id = Convert.ToInt32(row.Cells[0].Value.ToString());
-                _category = await _categoryService.GetByIdAsync(id);
-                TbName.Text = _category.Name;
+                _categoryDto = await _categoryService.GetByIdAsync(id);
+                TbName.Text = _categoryDto.Name;
                 BtAdd.Enabled = false;
                 BtRemove.Enabled = true;
                 BtUpdate.Enabled = true;
@@ -68,17 +72,17 @@ namespace WinFormsToDoList
         private async Task RefreshDataGridView()
         {
             _loadingDone = false;
-            var listCategory = await _categoryService.GetAllAsync();
-            var result = listCategory.Where(x => x.IsDeleted != true).ToList();
-            Dtg.DataSource = result;
+            //var listCategory = await _categoryService.GetAllAsync();
+            //var result = listCategory.Where(x => x.IsDeleted != true).ToList();
+            Dtg.DataSource = await _categoryService.GetAllAsync();
             // Ẩn colums
             Dtg.Columns["IsDeleted"].Visible = false;
-            Dtg.Columns["Jobs"].Visible = false;
+            //Dtg.Columns["Jobs"].Visible = false;
             TbName.Text = string.Empty;
             BtRemove.Enabled = false;
             BtUpdate.Enabled = false;
             BtAdd.Enabled = true;
-            _category = null;
+            _categoryDto = null;
             _loadingDone = true;
         }
 
@@ -86,13 +90,18 @@ namespace WinFormsToDoList
         {
             if (_loadingDone)
             {
-                if (_category is not null)
+                if (_categoryDto is not null)
                 {
                     if (!string.IsNullOrEmpty(TbName.Text))
                     {
-                        _category.Name = TbName.Text;
-                        _category.LastModificationTime = DateTime.Now;
-                        await _categoryService.UpdateAsync(_category);
+                        _categoryDto.Name = TbName.Text;
+                        //var item = _mapper.Map<CategoryDto, UpdateCategoryDto>(_categoryDto);
+                        var updateItem = new UpdateCategoryDto()
+                        {
+                            Id = _categoryDto.Id,
+                            Name = _categoryDto.Name
+                        };
+                        await _categoryService.UpdateAsync(updateItem);
                         await RefreshDataGridView();
                         MessageBox.Show("Change category completed", "Done", MessageBoxButtons.OK);
                     }
@@ -108,17 +117,35 @@ namespace WinFormsToDoList
         {
             if (_loadingDone)
             {
-                if (_category is not null)
+                if (_categoryDto is not null)
                 {
                     DialogResult dialogResult = MessageBox.Show("Are you sure want to delete this category", "Delete record", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
                         TbName.Text = string.Empty;
-                        _category.DeletetionTime = DateTime.Now;
-                        await _categoryService.RemoveAsync(_category);
+                        await _categoryService.DeleteAsync(_categoryDto.Id);
                         await RefreshDataGridView();
                         MessageBox.Show("Record has been successfully deleted", "Done", MessageBoxButtons.OK);
                     }
+                }
+            }
+        }
+
+        private async void BtFind_Click(object sender, EventArgs e)
+        {
+            if (_loadingDone)
+            {
+                if (!string.IsNullOrEmpty(TbFind.Text))
+                {
+                    var filter = new FilterCategoryDto()
+                    {
+                        Name = TbFind.Text,
+                    };
+                    Dtg.DataSource = await _categoryService.FilterAsync(filter);
+                }
+                else
+                {
+                    await RefreshDataGridView();
                 }
             }
         }

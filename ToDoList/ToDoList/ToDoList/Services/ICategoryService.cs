@@ -1,13 +1,11 @@
 ﻿using ToDoList.Data.Models;
+using ToDoList.Dtos.CategoryDto;
+using ToDoList.Repository;
 
 namespace ToDoList.Services
 {
-    public interface ICategoryService
+    public interface ICategoryService :  IGenericService<CategoryDto,CreateCategoryDto,UpdateCategoryDto,FilterCategoryDto>
     {
-        Task<List<Category>> GetAllAsync();
-        Task AddAsync(Category category);
-        Task RemoveAsync(Category category);
-        Task<Category> GetByIdAsync(int id);
-        Task UpdateAsync(Category category);
+       
     }
 }

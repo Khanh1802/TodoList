@@ -13,32 +13,74 @@ namespace ToDoList.Repository
             _context = context;
         }
 
-        public async Task AddAsync(Category category)
+        public async Task<Category> AddAsync(Category item)
         {
-            await _context.AddAsync(category);
+            await _context.Categories.AddAsync(item);
             await _context.SaveChangesAsync();
+            return item;
         }
 
-        public async Task RemoveAsync(Category category)
+        public async Task DeleteAsync(Category item)
         {
-            category.IsDeleted = true;
+            item.IsDeleted = true;
+            item.DeletetionTime = DateTime.Now;
             await _context.SaveChangesAsync();
         }
 
         public async Task<List<Category>> GetAllAsync()
         {
-            return await _context.Categories.ToListAsync();
+            return await _context.Categories.Where(x => !x.IsDeleted).ToListAsync();
         }
 
-        public async Task<Category> GetByIdAsync(int id)
+        public async Task<Category> GetByIdAsync<TKey>(TKey key)
         {
-            return await _context.Categories.FindAsync(id);
+            return await _context.Categories.FindAsync(key);
         }
 
-        public async Task UpdateAsync(Category category)
+        public async Task<IQueryable<Category>> GetQueryableAsync()
         {
-            _context.Update(category);
+            return await Task.FromResult(_context.Categories.Where(x => !x.IsDeleted).AsQueryable());
+        }
+
+        public Task SaveChangesAsync()
+        {
+            return _context.SaveChangesAsync();
+        }
+
+        public async Task<Category> UpdateAsync(Category item)
+        {
+            item.LastModificationTime = DateTime.Now;
+            _context.Categories.Update(item);
             await _context.SaveChangesAsync();
+            return item;
         }
+
+        //public async Task AddAsync(Category category)
+        //{
+        //    await _context.AddAsync(category);
+        //    await _context.SaveChangesAsync();
+        //}
+
+        //public async Task RemoveAsync(Category category)
+        //{
+        //    category.IsDeleted = true;
+        //    await _context.SaveChangesAsync();
+        //}
+
+        //public async Task<List<Category>> GetAllAsync()
+        //{
+        //    return await _context.Categories.ToListAsync();
+        //}
+
+        //public async Task<Category> GetByIdAsync(int id)
+        //{
+        //    return await _context.Categories.FindAsync(id);
+        //}
+
+        //public async Task UpdateAsync(Category category)
+        //{
+        //    _context.Update(category);
+        //    await _context.SaveChangesAsync();
+        //}
     }
 }

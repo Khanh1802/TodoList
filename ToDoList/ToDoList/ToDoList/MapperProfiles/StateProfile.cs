@@ -11,6 +11,7 @@ namespace ToDoList.MapperProfiles
             CreateMap<State, StateDto>();
             CreateMap<CreateStateDto, State>();
             CreateMap<UpdateStateDto, State>();
+            CreateMap<FilterStateDto,State>();
         }
     }
 }

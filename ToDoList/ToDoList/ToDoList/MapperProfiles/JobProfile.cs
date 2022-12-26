@@ -17,7 +17,7 @@ namespace ToDoList.MapperProfiles
 
             CreateMap<CreateJobDto, Job>();
             CreateMap<UpdateJobDto, Job>();
-
+            CreateMap<FilterJobDto, Job>();
         }
     }
 }

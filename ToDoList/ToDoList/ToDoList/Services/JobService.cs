@@ -25,12 +25,12 @@ namespace ToDoList.Services
 
         public async Task<JobDto> AddAsync(CreateJobDto item)
         {
-            var findCategory = await _categoryRepository.GetByIdAsync(item.CategoryId);
+            //var findCategory = await _categoryRepository.GetByIdAsync(item.CategoryId);
 
-            if (findCategory == null)
-            {
-                throw new Exception($"Category not found {item.CategoryId}");
-            }
+            //if (findCategory == null)
+            //{
+            //    throw new Exception($"Category not found {item.CategoryId}");
+            //}
 
             //var state = await _stateRepository.GetByIdAsync(item.StateId);
             //if (state == null)
@@ -76,12 +76,12 @@ namespace ToDoList.Services
 
         public async Task<JobDto> UpdateAsync(UpdateJobDto item)
         {
-            var findCategory = await _categoryRepository.GetByIdAsync(item.CategoryId);
+            //var findCategory = await _categoryRepository.GetByIdAsync(item.CategoryId);
 
-            if (findCategory == null)
-            {
-                throw new Exception($"Category not found {item.CategoryId}");
-            }
+            //if (findCategory == null)
+            //{
+            //    throw new Exception($"Category not found {item.CategoryId}");
+            //}
 
             //var state = await _stateRepository.GetByIdAsync(item.StateId);
 
