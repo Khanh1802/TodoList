@@ -21,7 +21,13 @@ namespace ToDoList.Services
 
         public async Task<StateDto> AddAsync(CreateStateDto item)
         {
-            var entity = _mapper.Map<CreateStateDto,State>(item);
+            //C1:
+            //var entity = _mapper.Map<CreateStateDto, State>(item);
+            //C2:
+            //var entity = _mapper.Map(item,new State());
+            //C3:
+            var entity = new State();
+            _mapper.Map(item, entity);
             await _stateRepository.AddAsync(entity);
             return _mapper.Map<State,StateDto>(entity);
             //var entity = _mapper.Map<CreateJobDto, Job>(item);
@@ -41,9 +47,13 @@ namespace ToDoList.Services
 
         public async Task<List<StateDto>> FilterAsync(FilterStateDto filter)
         {
+            //var filterState = await (await _stateRepository.GetQueryableAsync())
+            //    .Where(x => x.Name.Contains(filter.Name))
+            //    .ToListAsync();
             var filterState = await (await _stateRepository.GetQueryableAsync())
-                .Where(x => x.Name.Contains(filter.Name))
+                .Where(x => EF.Functions.Like(x.Name,$"{filter.Name}%"))
                 .ToListAsync();
+                //.Where(obj => DbFunctions.Like(obj.Column, "%expression%"))
             //Map<TSource, TDestination>(TSource source);
             return _mapper.Map<List<State>, List<StateDto>>(filterState);                
         }

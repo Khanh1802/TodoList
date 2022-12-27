@@ -23,18 +23,28 @@ namespace WinFormsToDoList
         {
             if (_loadingDone)
             {
-                if (!string.IsNullOrEmpty(TbName.Text))
+                try
                 {
-                    var item = new CreateCategoryDto();
-                    item.Name = TbName.Text;
-                    //var entity = _mapper.Map<CategoryDto, CreateCategoryDto>(_categoryDto);
-                    await _categoryService.AddAsync(item);
-                    MessageBox.Show("Create new category completed", "Done", MessageBoxButtons.OK);
-                    await RefreshDataGridView();
+                    if (!string.IsNullOrEmpty(TbName.Text))
+                    {
+                        var item = new CreateCategoryDto();
+                        item.Name = TbName.Text;
+                        //var entity = _mapper.Map<CategoryDto, CreateCategoryDto>(_categoryDto);
+                        await _categoryService.AddAsync(item);
+                        MessageBox.Show("Create new category completed", "Done", MessageBoxButtons.OK);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Name is empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Name is empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    await RefreshDataGridView();
                 }
             }
         }
@@ -92,22 +102,32 @@ namespace WinFormsToDoList
             {
                 if (_categoryDto is not null)
                 {
-                    if (!string.IsNullOrEmpty(TbName.Text))
+                    try
                     {
-                        _categoryDto.Name = TbName.Text;
-                        //var item = _mapper.Map<CategoryDto, UpdateCategoryDto>(_categoryDto);
-                        var updateItem = new UpdateCategoryDto()
+                        if (!string.IsNullOrEmpty(TbName.Text))
                         {
-                            Id = _categoryDto.Id,
-                            Name = _categoryDto.Name
-                        };
-                        await _categoryService.UpdateAsync(updateItem);
-                        await RefreshDataGridView();
-                        MessageBox.Show("Change category completed", "Done", MessageBoxButtons.OK);
+                            _categoryDto.Name = TbName.Text;
+                            //var item = _mapper.Map<CategoryDto, UpdateCategoryDto>(_categoryDto);
+                            var updateItem = new UpdateCategoryDto()
+                            {
+                                Id = _categoryDto.Id,
+                                Name = _categoryDto.Name
+                            };
+                            await _categoryService.UpdateAsync(updateItem);
+                            MessageBox.Show("Change category completed", "Done", MessageBoxButtons.OK);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Name is empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("Name is empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(ex.Message);
+                    }
+                    finally
+                    {
+                        await RefreshDataGridView();
                     }
                 }
             }
@@ -117,16 +137,26 @@ namespace WinFormsToDoList
         {
             if (_loadingDone)
             {
-                if (_categoryDto is not null)
+                try
                 {
-                    DialogResult dialogResult = MessageBox.Show("Are you sure want to delete this category", "Delete record", MessageBoxButtons.YesNo);
-                    if (dialogResult == DialogResult.Yes)
+                    if (_categoryDto is not null)
                     {
-                        TbName.Text = string.Empty;
-                        await _categoryService.DeleteAsync(_categoryDto.Id);
-                        await RefreshDataGridView();
-                        MessageBox.Show("Record has been successfully deleted", "Done", MessageBoxButtons.OK);
+                        DialogResult dialogResult = MessageBox.Show("Are you sure want to delete this category", "Delete record", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            TbName.Text = string.Empty;
+                            await _categoryService.DeleteAsync(_categoryDto.Id);
+                            MessageBox.Show("Record has been successfully deleted", "Done", MessageBoxButtons.OK);
+                        }
                     }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    await RefreshDataGridView();
                 }
             }
         }

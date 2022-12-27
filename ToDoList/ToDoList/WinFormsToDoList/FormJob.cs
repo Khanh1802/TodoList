@@ -141,9 +141,7 @@ namespace WinFormsToDoList
         private async Task RefreshDataGridView()
         {
             _loadingDone = false;
-            var listJob = await _jobService.GetAllAsync();
-            var a = listJob;
-            Dtg.DataSource = listJob;
+            Dtg.DataSource = await _jobService.GetAllAsync();
             // Ẩn colums
             Dtg.Columns["IsDeleted"].Visible = false;
             Dtg.Columns["StateId"].Visible = false;
@@ -157,11 +155,11 @@ namespace WinFormsToDoList
             _job = null;
             //var listCategory = await _categoryService.GetAllAsync();
             //var resultCategory = listCategory.Where(x => x.IsDeleted != true).ToList();
-            //CbbCategory.DataSource = resultCategory;
+            CbbCategory.DataSource = await _categoryService.GetAllAsync();
             CbbCategory.DisplayMember = "Name";
             // var listState = await _stateService.GetAllAsync();
             //  var resultState = listState.Where(x => x.IsDeleted != true).ToList();
-            //   CbbState.DataSource = resultState;
+            CbbState.DataSource = await _stateService.GetAllAsync();
             CbbState.DisplayMember = "Name";
             _loadingDone = true;
         }
