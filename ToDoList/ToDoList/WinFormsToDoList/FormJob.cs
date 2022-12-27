@@ -158,7 +158,7 @@ namespace WinFormsToDoList
             _loadingDone = true;
         }
 
-        private async void Dtg_CellClick(object sender, DataGridViewCellEventArgs e)
+        private  void Dtg_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex == -1)
             {
